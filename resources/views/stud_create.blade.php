@@ -14,7 +14,7 @@
 <br>
 <form action="{{url('create')}}" method="POST" class="form-group" style="width: 70%; margin-left: 15%;">
  @csrf <!-- {{csrf_field()}} -->
- @method('post')
+ @method('POST')
  
   <label class="form-group">First Name:</label>
   <input type="text" class="form-control" placeholder="First Name" name="first_name">
@@ -23,13 +23,14 @@
 <label>City Name:</label>
 <select class="form-control" name="city_name">
   <option value="bhubaneswar">Bhubaneswar</option>
-  <option value="cuttack">Cuttack</option>
+  <option value="metro">Metro</option>
+  <option value="lampung">Bandar_Lampung</option>
+  <option value="suscity">Sus_city</option>
 </select>
 <label>Email:</label>
   <input type="text" class="form-control" placeholder="Enter Email" name="email"><br>
   <button type="submit"  value = "Add student" class="btn btn-primary">Submit</button>
 </form>
 </div>
-</form>
   </body>
 </html>

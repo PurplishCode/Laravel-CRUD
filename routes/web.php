@@ -38,3 +38,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::post('create', [studentController::class, 'inputForm']);
 
 Route::get('/list', [studentController::class, 'showStudents']);
+
+Route::delete('students/{id}', [studentController::class, 'destroy'])->name('students.destroy');
+
+Route::put('students/{id}', [studentController::class, 'update'])->name('students.update');
